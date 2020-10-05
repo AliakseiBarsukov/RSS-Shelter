@@ -93,7 +93,7 @@
 
 .list__link_activ {
   padding-right: 0.5rem;
-  border-bottom: 0.5rem solid #F1CDB3;
+  border-bottom: 0.3rem solid #F1CDB3;
 }
 
 .main {
@@ -142,6 +142,7 @@
   font-family: Georgia;
   font-size: 4.4rem;
   font-weight: 400;
+  line-height: 130%;
 }
 
 .content-section__subtitle {
@@ -153,17 +154,66 @@
 }
 
 .content-section__button {
-  max-width: 207px;
+  max-width: 20.7rem;
   margin-top: 4rem;
   padding: 1.5rem 4.5rem;
-  border-radius: 50px;
+  border-radius: 5rem;
   font-size: 1.7rem;
   border: none;
   background-color: #F1CDB3;
 }
 
-.content-section-image {
+.content-section__image {
   margin-left: 140px;
-  z-index: 1;
+}
+
+.cozyHouse {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.house-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.house-content__image {
+  display: block;
+  max-height: 40.8rem;
+}
+
+.house-content__srection {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 43rem;
+}
+
+.about-content__title {
+  font-family: Georgia;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #545454;
+  padding-bottom: 2.5rem;
+}
+
+.about-content__subtitle {
+  font-family: Arial;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: #4C4C4C;
+}
+
+.about-subtitle {
+  padding-top: 2.5rem;
+  padding-bottom: 10.1em;
 }
 /*# sourceMappingURL=main.css.map */

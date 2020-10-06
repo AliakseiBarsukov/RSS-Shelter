@@ -135,7 +135,6 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     &__item {
         display: flex;
         align-items: center;
-    }
     
         &__link {
             color: $color-light-xl;
@@ -160,6 +159,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             padding-right: 0.5rem;
             border-bottom: 0.3rem solid $color-primary;
         }
+    }    
 }
 
 

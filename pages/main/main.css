@@ -71,7 +71,7 @@
           align-items: center;
 }
 
-.list__link {
+.list__item__link {
   color: #FFFFFF;
   font-family: Arial;
   font-size: 1.5rem;
@@ -80,18 +80,18 @@
   cursor: pointer;
 }
 
-.list__link_disabled {
+.list__item__link_disabled {
   color: #CDCDCD;
 }
 
-.list__link_disabled:hover {
+.list__item__link_disabled:hover {
   border-bottom: 0.3rem solid #F1CDB3;
   color: #FFFFFF;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
 
-.list__link_activ {
+.list__item__link_activ {
   padding-right: 0.5rem;
   border-bottom: 0.3rem solid #F1CDB3;
 }

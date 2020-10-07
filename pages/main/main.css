@@ -245,6 +245,7 @@
 }
 
 .pets {
+  background-color: #F6F6F6;
   padding-top: 8.1rem;
   padding-bottom: 10px;
 }
@@ -286,26 +287,84 @@
   display: flex;
 }
 
-.pets__content {
+.pets .pets__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.pets__content .slider-button {
+.pets .pets__content .pets__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pets .pets__content .pets__cards .pets__animal_card {
+  background-color: #FFFFFF;
+  padding-bottom: 3rem;
+  border-radius: 9px;
+}
+
+.pets .pets__content .pets__cards .animal__foto {
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.pets .pets__content .pets__cards .animal__name {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.21rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pets .pets__content .pets__cards .animal__btn {
+  max-width: 20.7rem;
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  font-size: 1.7rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  line-height: 130%;
+  border: 2px solid #F1CDB3;
+  outline: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.pets .pets__content .slider-button {
   border: 3px solid #F1CDB3;
   border-radius: 100%;
   padding: 1.9rem;
   background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
 }
 
-.pets__content .slider-button_reverted {
+.pets .pets__content .slider-button_reverted {
   border: 3px solid #F1CDB3;
   border-radius: 100%;
   padding: 1.9rem;
   background: none;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  max-width: 5.2rem;
+  max-height: 5.2rem;
 }
 
 .pets .pets__button {
@@ -317,6 +376,7 @@
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.12rem;
   line-height: 130%;
   border: none;
   outline: none;

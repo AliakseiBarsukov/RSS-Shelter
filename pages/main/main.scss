@@ -44,7 +44,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         size: 2rem;
     } 
     line-height: 115%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.21rem;
 }
 
 @mixin h5 {
@@ -280,6 +280,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
 
 .pets {
+    background-color: $color-light-l;
     padding-top: 8.1rem;
     padding-bottom: 10px;
 
@@ -307,20 +308,65 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             display: flex;
         }
 
-        &__content {
-            display: flex;
+        .pets__content {
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%;          
 
-            &__cards {
-                
+            .pets__cards {
+               display: flex;
+               justify-content: space-around;
+               text-align: center;
+               width: 100%;
+               padding-top: 6rem;
+               padding-bottom: 6rem;
+
+               .pets__animal_card {
+                    background-color: $color-light-xl;
+                    padding-bottom: 3rem;
+                    border-radius: 9px;
+                    
+                }
+
+                .animal__foto {
+                    border-radius: 9px;
+                    overflow: hidden;
+                }
+                    .animal__name {
+                        @include h4;
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                    }
+
+                    .animal__btn {
+                        max-width: 20.7rem;
+                        padding: 1.5rem 4.5rem;
+                        border-radius: 10rem;
+                        font-size: 1.7rem;
+                        font-family: Georgia;
+                        font-style: normal;
+                        font-weight: normal;
+                        letter-spacing: 0.1rem;
+                        line-height: 130%;
+                        border: 2px solid $color-primary;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: $color-light-xl;
+                    }
+               
             }
 
             .slider-button {
                 @include slider_button;
+                max-width: 5.2rem;
+                max-height: 5.2rem;
             }
     
             .slider-button_reverted {
                 @include slider_button;
                 transform: rotate(180deg);
+                max-width: 5.2rem;
+                max-height: 5.2rem;
             }
         }
 
@@ -335,7 +381,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             font-family: Georgia;
             font-style: normal;
             font-weight: normal;
-            // letter-spacing: 0.1rem;
+            letter-spacing: 0.12rem;
             line-height: 130%;
             border: none;
             outline: none;

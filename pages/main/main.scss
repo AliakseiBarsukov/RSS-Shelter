@@ -66,6 +66,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         size: 1.5rem;
    }
     line-height: 160%;
+    
 }
 
 @mixin paragraph-s {
@@ -107,7 +108,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .wrapper {
     display: flex;
     margin: 0 auto;
-    max-width: 126rem;
+    max-width: 120rem;
     justify-content: space-between;
 }
 
@@ -115,13 +116,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     position: absolute;
     top: 6rem;
     width: 100vw;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .menu {
-    width: 44rem;
+    width: 44.3rem;
     display: flex;
-    margin-right: 6.5rem;
 }
 
 .logo {
@@ -141,10 +141,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
         .list__link {
             color: $color-light-xl;
-            font-family: Arial;
-            font-size: 1.5rem;
-            line-height: 160%;
-            font-weight: 400;
+            @include paragraph-l;
             cursor: pointer;
         
             &_disabled {
@@ -152,14 +149,9 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             }
             
             &_disabled:hover {
-                border-bottom: 0.3rem solid $color-primary;
-                color: $color-light-xl;
-                transition: all 0.1s ease; 
-            }
-            
-            &_activ {
-                padding-right: 0.5rem;
-                border-bottom: 0.3rem solid $color-primary;
+                // border-bottom: 0.3rem solid $color-primary;
+                // color: $color-light-xl;
+                // transition: all 0.1s ease; 
             }
         }
     }    
@@ -188,7 +180,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         width: 100%;
         max-width: 69.8rem;
         max-height: 72.8rem;
-        transform: translateX(-5.2rem);
+
 
     } 
 }
@@ -199,7 +191,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     justify-content: center;
     padding-bottom: 8.3rem;
     max-width: 46.8rem;
-    margin-left: 0.8rem;
+    // margin-left: 0.8rem;
     &__title {
         color: $color-light-xl;
         max-width: 31rem; 
@@ -242,7 +234,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
          display: flex;
          width: 100%;
          justify-content: space-between;
-         padding: 8rem 22.7rem 10rem 18.3rem; 
+         padding: 8rem 17.5rem 10rem 17.5rem; 
     }
 
     &__image-wrapper {
@@ -294,12 +286,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         &__title {
             max-width: 40rem;
             @include h3;
-
+            letter-spacing: 0.21rem;
             span {
                 display: block;
                 
             }
-            margin-right: 4.2rem;
+            // margin-right: 4.2rem;
             text-align: center;
             color: $color-dark-l;
         }
@@ -311,31 +303,40 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         .pets__content {
             display: flex; 
             justify-content: space-between; 
-            width: 100%;          
+            width: 100%;
+            
+                  
 
             .pets__cards {
                display: flex;
-               justify-content: space-around;
+               justify-content: space-between;
                text-align: center;
                width: 100%;
                padding-top: 6rem;
-               padding-bottom: 6rem;
+               padding-bottom: 1.4rem;
+               max-width:99rem;
+               margin: auto;
 
                .pets__animal_card {
                     background-color: $color-light-xl;
-                    padding-bottom: 3rem;
-                    border-radius: 9px;
-                    
+                    padding-bottom: 3.4rem;
+                    border-radius: 9px;                    
+                }
+
+                .pets__animal_card:hover {
+                    cursor: pointer;
                 }
 
                 .animal__foto {
                     border-radius: 9px;
                     overflow: hidden;
                 }
+
                     .animal__name {
                         @include h4;
-                        padding-top: 3rem;
-                        padding-bottom: 3rem;
+                        padding-top: 2.7rem;
+                        padding-bottom: 2.8rem;
+                        letter-spacing: 0.12rem;
                     }
 
                     .animal__btn {
@@ -381,15 +382,83 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             font-family: Georgia;
             font-style: normal;
             font-weight: normal;
-            letter-spacing: 0.12rem;
+            letter-spacing: 0.09rem;
             line-height: 130%;
             border: none;
             outline: none;
             cursor: pointer;
             background-color: $color-primary;
+            margin-bottom: 9rem;
         }
     
 }
+
+
+.help {
+    display: flex;  
+    flex-direction: column; 
+    width: 100%;
+}
+
+.help__wrapper {
+}
+
+.help__title {
+    @include h3;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    max-width: 34.8rem;
+}
+
+.help__content {
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.help__content-wrapper {
+    // display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+// .help__content {
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 5rem;
+//     width: 100%;
+// }
+
+// .help__content-wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-bottom: 5rem;
+//     width: 100%;
+    
+// }
+
+
+
+.help__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    padding-bottom: 2rem;
+}
+.help__icon-text {
+    @include h4;
+}
+
+
+
+
+
 
 
 

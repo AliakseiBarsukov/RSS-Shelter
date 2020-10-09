@@ -148,11 +148,11 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
                 color: $color-dark-s;
             }
             
-            &_disabled:hover {
+            // &_disabled:hover {
                 // border-bottom: 0.3rem solid $color-primary;
                 // color: $color-light-xl;
                 // transition: all 0.1s ease; 
-            }
+            // }
         }
     }    
 }
@@ -357,18 +357,18 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
                
             }
 
-            .slider-button {
-                @include slider_button;
-                max-width: 5.2rem;
-                max-height: 5.2rem;
-            }
+            // .slider-button {
+            //     @include slider_button;
+            //     max-width: 5.2rem;
+            //     max-height: 5.2rem;
+            // }
     
-            .slider-button_reverted {
-                @include slider_button;
-                transform: rotate(180deg);
-                max-width: 5.2rem;
-                max-height: 5.2rem;
-            }
+            // .slider-button_reverted {
+            //     @include slider_button;
+            //     transform: rotate(180deg);
+            //     max-width: 5.2rem;
+            //     max-height: 5.2rem;
+            // }
         }
 
         
@@ -409,20 +409,27 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     padding-top: 8rem;
     padding-bottom: 6rem;
     max-width: 34.8rem;
+    margin: auto;
 }
 
 .help__content {
-    // display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
 .help__content-wrapper {
-    // display: flex;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
-    
+    width:  100.26rem;  
+    padding-bottom: 5.5rem; 
+}
+
+.help__content-wrapper2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10rem;
 }
 
 // .help__content {
@@ -434,7 +441,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
 // .help__content-wrapper {
 //     display: flex;
-//     justify-content: space-between;
+//     justify-content: space-between;  
 //     padding-bottom: 5rem;
 //     width: 100%;
     
@@ -454,6 +461,134 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .help__icon-text {
     @include h4;
 }
+
+
+.donation {
+    display: flex;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+.weapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.donation__wrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding: 8rem 14.5rem 10rem 14.5rem;
+}
+.donation__image-wrapper {
+    display: flex;
+}
+.donation__image {
+    width: 100%;
+}
+.donation__content {
+    flex-direction: column;
+    display: flex;
+    max-width: 38rem;
+    
+    .donation__title {
+        @include h3;
+        max-width: 30rem;
+        color: $color-dark-l;
+    }
+
+    .donation__info {
+        @include h5;
+        color: $color-dark-l;
+        padding-bottom: 2rem;
+        
+    letter-spacing: 0.09rem;
+    }
+
+    .donation__info_bank {
+        display: flex;
+        align-items: center;
+        background-color: $color-primary;
+        max-width: 34.9rem;
+        height: 4.3rem;
+        border-radius: 0.9rem;
+    }
+
+    .bank__card {
+        padding: 1.5rem;
+    }
+
+    .bank__card_number {
+        @include h4;
+        color: $color-dark-l;
+        align-self: center;
+        letter-spacing: 0.12rem;
+    }    
+
+    .donation__description {
+        @include paragraph-s;
+        color: $color-dark-m;
+        padding-top: 2rem;
+    }
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    background: $footer-gradient-background;
+    justify-content: space-between;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    width: 100%;
+    padding: 4rem 4rem 0rem;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 30.2rem;
+    padding-top: 1.6rem;
+    padding-bottom: 6rem;
+}
+
+.footer__contact_info {
+    @include h3;
+    color: $color-light-xl;
+}
+
+.footer__mail_adres,
+.footer__phone_number,
+.footer__adres_city {
+    @include h4;
+    color: $color-primary;
+    letter-spacing: 0.12rem;
+}
+
+.footer__contact_mail,
+.footer__contact_phone,
+.footer__contact_adres {
+    display: flex;
+}
+
+.footer__icon {
+    color: $color-primary;
+    padding-right: 2rem;
+}
+
+.footer_adres {
+    padding: 4rem 0;
+}
+
+.contact_boston{
+    padding-top: 3.4rem;
+    padding-bottom: 3.2rem;
+}
+
 
 
 

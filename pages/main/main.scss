@@ -140,19 +140,24 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         align-items: center;
 
         .list__link {
+            position: relative;
             color: $color-light-xl;
             @include paragraph-l;
             cursor: pointer;
+            
+
         
             &_disabled {
                 color: $color-dark-s;
             }
+
             
-            // &_disabled:hover {
-                // border-bottom: 0.3rem solid $color-primary;
-                // color: $color-light-xl;
-                // transition: all 0.1s ease; 
-            // }
+            
+            &_disabled:hover {
+                border-bottom: 0.3rem solid $color-primary;
+                color: $color-light-xl;
+                transition: all 0.1s ease; 
+            }
         }
     }    
 }
@@ -395,13 +400,20 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
 
 .help {
-    display: flex;  
+    display: flex;   
     flex-direction: column; 
     width: 100%;
 }
 
-.help__wrapper {
-}
+
+// 
+
+
+// ПЕРЕДЕЛАТЬ
+
+
+// 
+
 
 .help__title {
     @include h3;
@@ -422,31 +434,17 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .help__content-wrapper {
     display: flex;
     justify-content: space-between;
-    width:  100.26rem;  
+    width:  102.5rem;  
     padding-bottom: 5.5rem; 
 }
 
 .help__content-wrapper2 {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10rem;
+    padding-bottom: 10.2rem;
+    width:  98rem;
+    margin: auto;
 }
-
-// .help__content {
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 5rem;
-//     width: 100%;
-// }
-
-// .help__content-wrapper {
-//     display: flex;
-//     justify-content: space-between;  
-//     padding-bottom: 5rem;
-//     width: 100%;
-    
-// }
-
 
 
 .help__card {
@@ -456,37 +454,37 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .icon {
-    padding-bottom: 2rem;
+    padding-bottom: 2.8rem;
 }
 .help__icon-text {
     @include h4;
+    letter-spacing: 0.12rem;
 }
 
 
 .donation {
-    display: flex;
     width: 100%;
     background-color: #F6F6F6;
 }
-.weapper {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
+
 .donation__wrapper {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-top: 8rem;
     padding-bottom: 10rem;
-    padding: 8rem 14.5rem 10rem 14.5rem;
+    padding: 8rem 14.3rem 10.1rem 14.2rem;
 }
 .donation__image-wrapper {
     display: flex;
+    padding-top: 1rem;
 }
 .donation__image {
     width: 100%;
+    max-height: 26.1rem;
 }
 .donation__content {
+    display: flex;
     flex-direction: column;
     display: flex;
     max-width: 38rem;
@@ -498,11 +496,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     }
 
     .donation__info {
+        display: flex;
         @include h5;
         color: $color-dark-l;
-        padding-bottom: 2rem;
-        
-    letter-spacing: 0.09rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;        
+        letter-spacing: 0.09rem;
     }
 
     .donation__info_bank {
@@ -534,7 +533,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
 
 .footer {
-    display: flex;
+
     width: 100%;
     background: $footer-gradient-background;
     justify-content: space-between;
@@ -545,15 +544,17 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     justify-content: space-between;
     max-width: 120rem;
     width: 100%;
-    padding: 4rem 4rem 0rem;
+    padding-top: 4rem;
 }
 
 .footer__contact {
     display: flex;
     flex-direction: column;
     max-width: 30.2rem;
-    padding-top: 1.6rem;
-    padding-bottom: 6rem;
+    padding-top: 1.7rem;
+}
+.map {
+    margin-right: 2.1rem;
 }
 
 .footer__contact_info {
@@ -569,6 +570,10 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     letter-spacing: 0.12rem;
 }
 
+.footer__phone_number {
+    padding-top: 0.5rem;
+}
+
 .footer__contact_mail,
 .footer__contact_phone,
 .footer__contact_adres {
@@ -581,12 +586,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .footer_adres {
-    padding: 4rem 0;
+    padding: 4.5rem 0;
 }
 
 .contact_boston{
     padding-top: 3.4rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 3.7rem;
 }
 
 
@@ -599,7 +604,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .wrapper {
         padding: 0 4rem;
     }

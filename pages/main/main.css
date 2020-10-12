@@ -65,6 +65,7 @@
 }
 
 .list .list__item .list__link {
+  position: relative;
   color: #FFFFFF;
   font-family: Arial;
   font-style: normal;
@@ -76,6 +77,13 @@
 
 .list .list__item .list__link_disabled {
   color: #CDCDCD;
+}
+
+.list .list__item .list__link_disabled:hover {
+  border-bottom: 0.3rem solid #F1CDB3;
+  color: #FFFFFF;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .main {
@@ -404,7 +412,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100.26rem;
+  width: 102.5rem;
   padding-bottom: 5.5rem;
 }
 
@@ -414,7 +422,9 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 10rem;
+  padding-bottom: 10.2rem;
+  width: 98rem;
+  margin: auto;
 }
 
 .help__card {
@@ -431,7 +441,7 @@
 }
 
 .icon {
-  padding-bottom: 2rem;
+  padding-bottom: 2.8rem;
 }
 
 .help__icon-text {
@@ -441,53 +451,47 @@
   font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.21rem;
+  letter-spacing: 0.12rem;
 }
 
 .donation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   background-color: #F6F6F6;
-}
-
-.weapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .donation__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 10rem;
-  padding: 8rem 14.5rem 10rem 14.5rem;
+  padding: 8rem 14.3rem 10.1rem 14.2rem;
 }
 
 .donation__image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 1rem;
 }
 
 .donation__image {
   width: 100%;
+  max-height: 26.1rem;
 }
 
 .donation__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 38rem;
 }
@@ -504,6 +508,9 @@
 }
 
 .donation__content .donation__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -511,6 +518,7 @@
   line-height: 110%;
   letter-spacing: 0.06rem;
   color: #545454;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   letter-spacing: 0.09rem;
 }
@@ -557,9 +565,6 @@
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   background: url(/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   -webkit-box-pack: justify;
@@ -576,7 +581,7 @@
           justify-content: space-between;
   max-width: 120rem;
   width: 100%;
-  padding: 4rem 4rem 0rem;
+  padding-top: 4rem;
 }
 
 .footer__contact {
@@ -588,8 +593,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 30.2rem;
-  padding-top: 1.6rem;
-  padding-bottom: 6rem;
+  padding-top: 1.7rem;
+}
+
+.map {
+  margin-right: 2.1rem;
 }
 
 .footer__contact_info {
@@ -615,6 +623,10 @@
   letter-spacing: 0.12rem;
 }
 
+.footer__phone_number {
+  padding-top: 0.5rem;
+}
+
 .footer__contact_mail,
 .footer__contact_phone,
 .footer__contact_adres {
@@ -629,15 +641,15 @@
 }
 
 .footer_adres {
-  padding: 4rem 0;
+  padding: 4.5rem 0;
 }
 
 .contact_boston {
   padding-top: 3.4rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 3.7rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .wrapper {
     padding: 0 4rem;
   }

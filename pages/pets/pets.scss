@@ -76,7 +76,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         weight: normal;
         size: 1.2rem;
     }
-    line-height: 150%;
+    line-height: 160%;
 }
 
 @mixin slider_button {
@@ -84,6 +84,19 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     border-radius: 100%;
     padding: 1.9rem;
     background: none;
+}
+
+@mixin pets-card-title {
+  font: {
+    family: Georgia;
+    style: normal;
+    weight: normal;
+    size: 2.0rem;
+    height: 2.3rem;
+  }
+
+  letter-spacing: 0.06em;
+  color: $color-dark-l; 
 }
 
 
@@ -108,10 +121,11 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .header {
-  position: absolute;
-  top: 6rem;
+  // position: fixed;
   width: 100vw;
   max-width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .menu {
@@ -131,9 +145,10 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   font-size: 3.2rem;
   line-height: 110%;
   align-items: center;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.20rem;
   color: #545454;
   color: #c4c4c4;
+  padding-bottom: 1rem;
 }
 
 .logo__title:first-child {
@@ -141,11 +156,10 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 .logo__title-span {
   font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
+  align-items: center;
 }
 
 .list {
@@ -181,3 +195,80 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   }    
 }
 
+.friends {
+  background-color: $color-light-l;
+  width: 100%;
+}
+
+.friends__title {
+  display: flex;
+  @include h3;
+  margin: auto;  
+  width: 40rem;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 4.5rem;
+}
+
+.friends__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.friends_content {
+  display: flex;
+  flex-wrap: wrap;
+  
+  // width: 120rem;
+}
+
+.friends__card {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.4rem;
+  max-width:25%;
+  margin: auto;
+}
+
+  .friends__animal_card {
+       background-color: $color-light-xl;
+       padding-bottom: 3.4rem;
+       border-radius: 9px;                    
+   }
+
+   .friends__animal_card:hover {
+       cursor: pointer;
+   }
+
+   .animal__foto {
+       border-radius: 9px;
+       overflow: hidden;
+   }
+
+       .animal__name {
+           @include h4;
+           padding-top: 2.7rem;
+           padding-bottom: 2.8rem;
+           letter-spacing: 0.12rem;
+       }
+
+       .animal__btn {
+           max-width: 20.7rem;
+           padding: 1.5rem 4.5rem;
+           border-radius: 10rem;
+           font-size: 1.7rem;
+           font-family: Georgia;
+           font-style: normal;
+           font-weight: normal;
+           letter-spacing: 0.1rem;
+           line-height: 130%;
+           border: 2px solid $color-primary;
+           outline: none;
+           cursor: pointer;
+           background-color: $color-light-xl;
+       }

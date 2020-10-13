@@ -21,10 +21,10 @@
 }
 
 .header {
-  position: absolute;
-  top: 6rem;
   width: 100vw;
   max-width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .menu {
@@ -53,9 +53,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.20rem;
   color: #545454;
   color: #c4c4c4;
+  padding-bottom: 1rem;
 }
 
 .logo__title:first-child {
@@ -64,11 +65,12 @@
 
 .logo__title-span {
   font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list {
@@ -100,5 +102,107 @@
   font-size: 1.5rem;
   line-height: 160%;
   cursor: pointer;
+}
+
+.friends {
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+.friends__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  margin: auto;
+  width: 40rem;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 4.5rem;
+}
+
+.friends__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.friends_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.friends__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.4rem;
+  max-width: 25%;
+  margin: auto;
+}
+
+.friends__animal_card {
+  background-color: #FFFFFF;
+  padding-bottom: 3.4rem;
+  border-radius: 9px;
+}
+
+.friends__animal_card:hover {
+  cursor: pointer;
+}
+
+.animal__foto {
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.animal__name {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.21rem;
+  padding-top: 2.7rem;
+  padding-bottom: 2.8rem;
+  letter-spacing: 0.12rem;
+}
+
+.animal__btn {
+  max-width: 20.7rem;
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  font-size: 1.7rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  line-height: 130%;
+  border: 2px solid #F1CDB3;
+  outline: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=pets.css.map */

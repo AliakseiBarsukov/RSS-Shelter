@@ -121,11 +121,14 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .header {
-  // position: fixed;
+  position: sticky;
+  top: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  z-index: 99;
   width: 100vw;
   max-width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  background-color: $color-light-s;
 }
 
 .menu {
@@ -136,6 +139,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .logo {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .logo__title {
@@ -154,12 +158,14 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .logo__title:first-child {
  color: $color-dark-l;
 }
-.logo__title-span {
+
+.logo__title-subtitle {
   font-family: Arial;
+  color: $color-dark-3xl;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: 0.15rem;
-  align-items: center;
+  letter-spacing: 0.13rem;
+  text-align: center;
 }
 
 .list {
@@ -173,24 +179,18 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
       align-items: center;
 
       .list__link {
-          position: relative;
           color: $color-dark-3xl;
           @include paragraph-l;
           cursor: pointer;
-          
-
-      
-          // &_disabled {
-          //     color: $color-dark-l;
-          // }
 
           
-          
-          // &_disabled:hover {
-          //     border-bottom: 0.3rem solid $color-primary;
-          //     color: $color-dark-l;
-          //     transition: all 0.1s ease; 
-          // }
+          &_activ {
+            border-bottom: 0.3rem solid $color-primary;
+          }
+
+      }
+      .list__link:hover {
+        opacity: 0.7;
       }
   }    
 }
@@ -201,21 +201,20 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .friends__title {
-  display: flex;
   @include h3;
+  color: $color-dark-l;
   margin: auto;  
   width: 40rem;
   text-align: center;
   padding-top: 8.1rem;
   padding-bottom: 4.2rem;
+  line-height: 130%;
 }
 
 .friends__wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
-  // justify-content: space-between;
-  // width: 100%;
 }
 
 .friends_content {
@@ -236,44 +235,49 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   max-width: 27rem;  
 }
 
-  .friends__animal_card {
-       background-color: $color-light-xl;
-       padding-bottom: 3rem;
-       border-radius: 10% 10% 0% 0%;                   
-   }
+.friends__animal_card {
+  background-color: $color-light-xl;
+  padding-bottom: 3rem;
+  border-radius: 10% 10% 0% 0%;                   
+}
 
-   .friends__animal_card:hover {
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-       cursor: pointer;
-   }
+.friends__animal_card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: pointer;
+}
 
-   .animal__foto {
-      border-radius: 9px 9px 0 0;
-      overflow: hidden;
-   }
+.animal__foto {
+  border-radius: 9px 9px 0 0;
+  overflow: hidden;
+}
 
-       .animal__name {
-           @include h4;
-           padding-top: 2.7rem;
-           padding-bottom: 2.8rem;
-           letter-spacing: 0.12rem;
-       }
+.animal__name {
+  @include h4;
+  padding-top: 2.7rem;
+  padding-bottom: 3rem;
+  letter-spacing: 0.12rem;
+}
 
-       .animal__btn {
-           max-width: 20.7rem;
-           padding: 1.5rem 4.5rem;
-           border-radius: 10rem;
-           font-size: 1.7rem;
-           font-family: Georgia;
-           font-style: normal;
-           font-weight: normal;
-           letter-spacing: 0.1rem;
-           line-height: 130%;
-           border: 2px solid $color-primary;
-           outline: none;
-           cursor: pointer;
-           background-color: $color-light-xl;
-       }
+.animal__btn {
+  align-items: center;
+  max-width: 20rem;
+  padding: 1.4rem 4.4rem;
+  border-radius: 10rem;
+  font-size: 1.7rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  line-height: 130%;
+  border: 2px solid $color-primary;
+  outline: none;
+  cursor: pointer;
+  background-color: $color-light-xl;           
+}
+
+.animal__btn:hover {        
+  background-color: $color-primary-light;
+}
 
 
 .button__slaider {
@@ -281,8 +285,8 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   justify-content: space-between;
   margin: auto;
   width: 34rem;
-  padding-top: 4.6rem;
-  padding-bottom: 10.1rem;
+  padding-top: 4.7rem;
+  padding-bottom: 10rem;
 }
 
 .btn__paginator {
@@ -290,10 +294,17 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   height: 52px;
   border: none;
   outline: none;
+  background:transparent;
 }
 .activ {
   border: 0.2rem solid $color-primary;
   border-radius:100%;
+}
+
+.activ:hover {
+  background:transparent;
+  cursor: pointer;
+  box-shadow: 0px 0px 25px 2px rgba(13, 13, 13, 0.09);
 }
 
 .disabled {
@@ -309,67 +320,78 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   }   
   
   
-  .footer {
+.footer {
 
-    width: 100%;
-    background: $footer-gradient-background;
-    justify-content: space-between;
+  width: 100%;
+  background: $footer-gradient-background;
+  justify-content: space-between;
 }
 
 .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 120rem;
-    width: 100%;
-    padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  width: 100%;
+  padding-top: 4rem;
 }
-
 
 .footer__contact {
-    display: flex;
-    flex-direction: column;
-    max-width: 30.2rem;
-    padding-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 30.2rem;
+  padding-top: 1.7rem;
 }
+
 .map {
-    margin-right: 2.1rem;
+  margin-right: 2.4rem;
 }
 
 .footer__contact_info {
-    @include h3;
-    color: $color-light-xl;
+  @include h3;
+  color: $color-light-xl;
 }
 
 .footer__mail_adres,
 .footer__phone_number,
 .footer__adres_city {
-    @include h4;
-    color: $color-primary;
-    letter-spacing: 0.12rem;
-}
-
-.footer__phone_number {
-    padding-top: 0.5rem;
+  @include h4;
+  color: $color-primary;
+  letter-spacing: 0.12rem;
 }
 
 .footer__contact_mail,
 .footer__contact_phone,
 .footer__contact_adres {
-    display: flex;
-    text-decoration: none;
-      
+  display: flex;
+  text-decoration: none; 
+  align-items: center; 
+}
+
+.pin {
+  vertical-align: centr;
+  align-items: center;
+}
+
+.footer__content {
+  display: flex;
+  text-decoration: none;
 }
 
 .footer__icon {
-    color: $color-primary;
-    padding-right: 2rem;
+  color: $color-primary;
+  padding-right: 2rem;
 }
 
 .footer_adres {
-    padding: 4.5rem 0;
+  padding: 4.4rem 0;
 }
 
 .contact_boston{
-    padding-top: 3.3rem;
-    padding-bottom: 3.7rem;
+  padding-top: 3.2rem;
+    
+}
+
+.contacy_london {
+  padding-top: 3.3rem;
+  align-items: center;
 }

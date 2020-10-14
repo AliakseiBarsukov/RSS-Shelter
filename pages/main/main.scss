@@ -405,16 +405,6 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     width: 100%;
 }
 
-
-// 
-
-
-// ПЕРЕДЕЛАТЬ
-
-
-// 
-
-
 .help__title {
     @include h3;
     text-align: center;
@@ -532,6 +522,8 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 
+// 
+
 .footer {
 
     width: 100%;
@@ -547,6 +539,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     padding-top: 4rem;
 }
 
+
 .footer__contact {
     display: flex;
     flex-direction: column;
@@ -554,7 +547,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     padding-top: 1.7rem;
 }
 .map {
-    margin-right: 2.1rem;
+    margin-right: 2.4rem;
 }
 
 .footer__contact_info {
@@ -570,14 +563,22 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     letter-spacing: 0.12rem;
 }
 
-.footer__phone_number {
-    padding-top: 0.5rem;
-}
-
 .footer__contact_mail,
 .footer__contact_phone,
 .footer__contact_adres {
     display: flex;
+    text-decoration: none; 
+    align-items: center; 
+}
+
+.pin {
+  vertical-align: centr;
+  align-items: center;
+}
+
+.footer__content {
+  display: flex;
+  text-decoration: none;
 }
 
 .footer__icon {
@@ -586,12 +587,17 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 .footer_adres {
-    padding: 4.5rem 0;
+    padding: 4.4rem 0;
 }
 
 .contact_boston{
-    padding-top: 3.4rem;
-    padding-bottom: 3.7rem;
+    padding-top: 3.2rem;
+    
+}
+
+.contacy_london {
+  padding-top: 3.3rem;
+  align-items: center;
 }
 
 

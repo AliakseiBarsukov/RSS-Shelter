@@ -122,8 +122,8 @@
   margin: auto;
   width: 40rem;
   text-align: center;
-  padding-top: 8rem;
-  padding-bottom: 4.5rem;
+  padding-top: 8.1rem;
+  padding-bottom: 4.2rem;
 }
 
 .friends__wrapper {
@@ -134,10 +134,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .friends_content {
@@ -146,35 +144,42 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120rem;
 }
 
 .friends__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.4rem;
-  max-width: 25%;
-  margin: auto;
+  padding-top: 1.7rem;
+  padding-bottom: 1.2rem;
+  max-width: 27rem;
 }
 
 .friends__animal_card {
   background-color: #FFFFFF;
-  padding-bottom: 3.4rem;
-  border-radius: 9px;
+  padding-bottom: 3rem;
+  border-radius: 10% 10% 0% 0%;
 }
 
 .friends__animal_card:hover {
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   cursor: pointer;
 }
 
 .animal__foto {
-  border-radius: 9px;
+  border-radius: 9px 9px 0 0;
   overflow: hidden;
 }
 
@@ -204,5 +209,127 @@
   outline: none;
   cursor: pointer;
   background-color: #FFFFFF;
+}
+
+.button__slaider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 34rem;
+  padding-top: 4.6rem;
+  padding-bottom: 10.1rem;
+}
+
+.btn__paginator {
+  width: 52px;
+  height: 52px;
+  border: none;
+  outline: none;
+}
+
+.activ {
+  border: 0.2rem solid #F1CDB3;
+  border-radius: 100%;
+}
+
+.disabled {
+  border: 0.2rem solid #CDCDCD;
+  border-radius: 100%;
+}
+
+.btn__number {
+  background-color: #F1CDB3;
+  color: #292929;
+  border-radius: 100%;
+}
+
+.footer {
+  width: 100%;
+  background: url(/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120rem;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 30.2rem;
+  padding-top: 1.7rem;
+}
+
+.map {
+  margin-right: 2.1rem;
+}
+
+.footer__contact_info {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #FFFFFF;
+}
+
+.footer__mail_adres,
+.footer__phone_number,
+.footer__adres_city {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.21rem;
+  color: #F1CDB3;
+  letter-spacing: 0.12rem;
+}
+
+.footer__phone_number {
+  padding-top: 0.5rem;
+}
+
+.footer__contact_mail,
+.footer__contact_phone,
+.footer__contact_adres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.footer__icon {
+  color: #F1CDB3;
+  padding-right: 2rem;
+}
+
+.footer_adres {
+  padding: 4.5rem 0;
+}
+
+.contact_boston {
+  padding-top: 3.3rem;
+  padding-bottom: 3.7rem;
 }
 /*# sourceMappingURL=pets.css.map */

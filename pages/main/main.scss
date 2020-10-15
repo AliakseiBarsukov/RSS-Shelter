@@ -129,6 +129,33 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     flex-direction: column;
 }
 
+.logo__title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.2rem;
+    line-height: 110%;
+    align-items: center;
+    letter-spacing: 0.20rem;
+    color:$color-primary;
+    padding-bottom: 1rem;
+  }
+
+  .logo__title_color  {
+      color: #C4C4C4;
+      ;
+  }
+  
+  .logo__title-subtitle {
+    font-family: Arial;
+    color: $color-dark-3xl;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.13rem;
+    text-align: center;
+    color: $color-light-xl;
+  }
+
 .list {
     display: flex;
     justify-content: space-between;
@@ -144,7 +171,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             color: $color-light-xl;
             @include paragraph-l;
             cursor: pointer;
-            
+            text-decoration: none;
+            border-bottom: 0.3rem solid transparent;
+
+            &_active {
+                border-bottom: 0.3rem solid $color-primary;  
+            }
 
         
             &_disabled {
@@ -196,7 +228,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     justify-content: center;
     padding-bottom: 8.3rem;
     max-width: 46.8rem;
-    // margin-left: 0.8rem;
+
     &__title {
         color: $color-light-xl;
         max-width: 31rem; 
@@ -292,6 +324,7 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             max-width: 40rem;
             @include h3;
             letter-spacing: 0.21rem;
+
             span {
                 display: block;
                 
@@ -362,18 +395,25 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
                
             }
 
-            // .slider-button {
-            //     @include slider_button;
-            //     max-width: 5.2rem;
-            //     max-height: 5.2rem;
-            // }
+            .slider__button {
+                position: relative;
+                top: 48.8%;
+                @include slider_button;
+                max-width: 5.2rem;
+                max-height: 5.2rem;
+            }
     
-            // .slider-button_reverted {
-            //     @include slider_button;
-            //     transform: rotate(180deg);
-            //     max-width: 5.2rem;
-            //     max-height: 5.2rem;
-            // }
+            .slider-button_reverted {
+                position: relative;
+                top: 48.8%;
+                @include slider_button;
+                max-width: 5.2rem;
+                max-height: 5.2rem;
+            }
+
+            .arrow {
+                display: block;
+            }
         }
 
         
@@ -394,6 +434,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
             cursor: pointer;
             background-color: $color-primary;
             margin-bottom: 9rem;
+            text-decoration: none;
+            color: $color-dark-3xl
+        }
+
+        .pets__button:hover {
+            background-color: $color-primary-light;
         }
     
 }
@@ -500,7 +546,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         background-color: $color-primary;
         max-width: 34.9rem;
         height: 4.3rem;
-        border-radius: 0.9rem;
+        border-radius: 0.9rem; 
+        cursor: pointer;       
+    }
+
+    .donation__info_bank:hover {
+        background-color: $color-primary-light;
     }
 
     .bank__card {

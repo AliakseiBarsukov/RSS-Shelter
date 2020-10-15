@@ -44,6 +44,34 @@
           flex-direction: column;
 }
 
+.logo__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 110%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.20rem;
+  color: #F1CDB3;
+  padding-bottom: 1rem;
+}
+
+.logo__title_color {
+  color: #C4C4C4;
+}
+
+.logo__title-subtitle {
+  font-family: Arial;
+  color: #292929;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.13rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +101,12 @@
   font-size: 1.5rem;
   line-height: 160%;
   cursor: pointer;
+  text-decoration: none;
+  border-bottom: 0.3rem solid transparent;
+}
+
+.list .list__item .list__link_active {
+  border-bottom: 0.3rem solid #F1CDB3;
 }
 
 .list .list__item .list__link_disabled {
@@ -348,6 +382,32 @@
   background-color: #FFFFFF;
 }
 
+.pets .pets__content .slider__button {
+  position: relative;
+  top: 48.8%;
+  border: 3px solid #F1CDB3;
+  border-radius: 100%;
+  padding: 1.9rem;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+}
+
+.pets .pets__content .slider-button_reverted {
+  position: relative;
+  top: 48.8%;
+  border: 3px solid #F1CDB3;
+  border-radius: 100%;
+  padding: 1.9rem;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+}
+
+.pets .pets__content .arrow {
+  display: block;
+}
+
 .pets .pets__button {
   max-width: 26.1rem;
   margin-top: 4rem;
@@ -364,6 +424,12 @@
   cursor: pointer;
   background-color: #F1CDB3;
   margin-bottom: 9rem;
+  text-decoration: none;
+  color: #292929;
+}
+
+.pets .pets__button:hover {
+  background-color: #FDDCC4;
 }
 
 .help {
@@ -534,6 +600,11 @@
   max-width: 34.9rem;
   height: 4.3rem;
   border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+.donation__content .donation__info_bank:hover {
+  background-color: #FDDCC4;
 }
 
 .donation__content .bank__card {

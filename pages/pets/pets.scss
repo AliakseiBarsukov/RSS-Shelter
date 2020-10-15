@@ -150,13 +150,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
   line-height: 110%;
   align-items: center;
   letter-spacing: 0.20rem;
-  color: #545454;
-  color: #c4c4c4;
+  color: $color-primary;
   padding-bottom: 1rem;
 }
 
-.logo__title:first-child {
- color: $color-dark-l;
+.logo__title_color {
+  color: $color-dark-l
 }
 
 .logo__title-subtitle {
@@ -182,15 +181,16 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
           color: $color-dark-3xl;
           @include paragraph-l;
           cursor: pointer;
-
+          border-bottom: 0.3rem solid transparent;
+          text-decoration: none;
           
           &_activ {
             border-bottom: 0.3rem solid $color-primary;
           }
-
       }
       .list__link:hover {
         opacity: 0.7;
+        border-bottom: 0.3rem solid $color-primary;
       }
   }    
 }

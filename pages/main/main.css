@@ -382,17 +382,7 @@
   background-color: #FFFFFF;
 }
 
-.pets .pets__content .slider__button {
-  position: relative;
-  top: 48.8%;
-  border: 3px solid #F1CDB3;
-  border-radius: 100%;
-  padding: 1.9rem;
-  background: none;
-  max-width: 5.2rem;
-  max-height: 5.2rem;
-}
-
+.pets .pets__content .slider__button,
 .pets .pets__content .slider-button_reverted {
   position: relative;
   top: 48.8%;
@@ -402,6 +392,12 @@
   background: none;
   max-width: 5.2rem;
   max-height: 5.2rem;
+  outline: none;
+}
+
+.pets .pets__content .slider__button:hover,
+.pets .pets__content .slider-button_reverted:hover {
+  background-color: #FDDCC4;
 }
 
 .pets .pets__content .arrow {

@@ -395,21 +395,22 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
                
             }
 
-            .slider__button {
-                position: relative;
-                top: 48.8%;
-                @include slider_button;
-                max-width: 5.2rem;
-                max-height: 5.2rem;
-            }
-    
+            .slider__button,
             .slider-button_reverted {
                 position: relative;
                 top: 48.8%;
                 @include slider_button;
                 max-width: 5.2rem;
                 max-height: 5.2rem;
+                outline: none;
             }
+
+            .slider__button:hover,
+            .slider-button_reverted:hover {
+                background-color: $color-primary-light;
+            }
+    
+        
 
             .arrow {
                 display: block;

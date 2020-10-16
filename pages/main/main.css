@@ -554,7 +554,7 @@
   max-width: 38rem;
 }
 
-.donation__content .donation__title {
+.donation__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -565,7 +565,7 @@
   color: #545454;
 }
 
-.donation__content .donation__info {
+.donation__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +581,7 @@
   letter-spacing: 0.09rem;
 }
 
-.donation__content .donation__info_bank {
+.donation__info_bank {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,15 +595,15 @@
   cursor: pointer;
 }
 
-.donation__content .donation__info_bank:hover {
+.donation__info_bank:hover {
   background-color: #FDDCC4;
 }
 
-.donation__content .bank__card {
+.donation .bank__card {
   padding: 1.5rem;
 }
 
-.donation__content .bank__card_number {
+.donation .bank__card_number {
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -617,7 +617,7 @@
   letter-spacing: 0.12rem;
 }
 
-.donation__content .donation__description {
+.donation .donation__description {
   font-family: Arial;
   font-style: italic;
   font-weight: normal;
@@ -659,7 +659,7 @@
   padding-top: 1.7rem;
 }
 
-.map {
+.footer .map {
   margin-right: 2.4rem;
 }
 
@@ -673,9 +673,7 @@
   color: #FFFFFF;
 }
 
-.footer__mail_adres,
-.footer__phone_number,
-.footer__adres_city {
+.footer__mail_adres, .footer__phone_number, .footer__adres_city {
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -686,9 +684,7 @@
   letter-spacing: 0.12rem;
 }
 
-.footer__contact_mail,
-.footer__contact_phone,
-.footer__contact_adres {
+.footer__contact_mail, .footer__contact_phone, .footer__contact_adres {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,7 +694,7 @@
           align-items: center;
 }
 
-.pin {
+.footer .pin {
   vertical-align: centr;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -721,11 +717,11 @@
   padding: 4.4rem 0;
 }
 
-.contact_boston {
+.footer .contact_boston {
   padding-top: 3.2rem;
 }
 
-.contacy_london {
+.footer .contacy_london {
   padding-top: 3.3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;

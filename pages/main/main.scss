@@ -496,57 +496,60 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 .donation {
     width: 100%;
     background-color: #F6F6F6;
-}
 
-.donation__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    padding: 8rem 14.3rem 10.1rem 14.2rem;
-}
-.donation__image-wrapper {
-    display: flex;
-    padding-top: 1rem;
-}
-.donation__image {
-    width: 100%;
-    max-height: 26.1rem;
-}
-.donation__content {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    max-width: 38rem;
-    
-    .donation__title {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+        padding: 8rem 14.3rem 10.1rem 14.2rem;
+    }
+
+    &__image-wrapper {
+        display: flex;
+        padding-top: 1rem;
+    }
+
+    &__image {
+        width: 100%;
+        max-height: 26.1rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        max-width: 38rem;
+    }
+        
+    &__title {
         @include h3;
         max-width: 30rem;
         color: $color-dark-l;
     }
 
-    .donation__info {
+    &__info {
         display: flex;
         @include h5;
         color: $color-dark-l;
         padding-top: 2rem;
         padding-bottom: 2rem;        
         letter-spacing: 0.09rem;
-    }
 
-    .donation__info_bank {
-        display: flex;
-        align-items: center;
-        background-color: $color-primary;
-        max-width: 34.9rem;
-        height: 4.3rem;
-        border-radius: 0.9rem; 
-        cursor: pointer;       
-    }
+        &_bank {
+            display: flex;
+            align-items: center;
+            background-color: $color-primary;
+            max-width: 34.9rem;
+            height: 4.3rem;
+            border-radius: 0.9rem; 
+            cursor: pointer;       
+        }
 
-    .donation__info_bank:hover {
-        background-color: $color-primary-light;
+        &_bank:hover {
+            background-color: $color-primary-light;
+        }
     }
 
     .bank__card {
@@ -565,86 +568,89 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         color: $color-dark-m;
         padding-top: 2rem;
     }
+    
 }
-
-
-// 
 
 .footer {
 
     width: 100%;
     background: $footer-gradient-background;
     justify-content: space-between;
-}
 
-.footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 120rem;
-    width: 100%;
-    padding-top: 4rem;
-}
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 120rem;
+        width: 100%;
+        padding-top: 4rem;
+    }
 
-
-.footer__contact {
-    display: flex;
-    flex-direction: column;
-    max-width: 30.2rem;
-    padding-top: 1.7rem;
-}
-.map {
-    margin-right: 2.4rem;
-}
-
-.footer__contact_info {
-    @include h3;
-    color: $color-light-xl;
-}
-
-.footer__mail_adres,
-.footer__phone_number,
-.footer__adres_city {
-    @include h4;
-    color: $color-primary;
-    letter-spacing: 0.12rem;
-}
-
-.footer__contact_mail,
-.footer__contact_phone,
-.footer__contact_adres {
-    display: flex;
-    text-decoration: none; 
-    align-items: center; 
-}
-
-.pin {
-  vertical-align: centr;
-  align-items: center;
-}
-
-.footer__content {
-  display: flex;
-  text-decoration: none;
-}
-
-.footer__icon {
-    color: $color-primary;
-    padding-right: 2rem;
-}
-
-.footer_adres {
-    padding: 4.4rem 0;
-}
-
-.contact_boston{
-    padding-top: 3.2rem;
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        max-width: 30.2rem;
+        padding-top: 1.7rem;
+    }
     
+    .map {
+        margin-right: 2.4rem;
+    }
+    
+    &__contact_info {
+        @include h3;
+        color: $color-light-xl;
+    }
+    
+    &__mail_adres,
+    &__phone_number,
+    &__adres_city {
+        @include h4;
+        color: $color-primary;
+        letter-spacing: 0.12rem;
+    }
+    
+    &__contact_mail,
+    &__contact_phone,
+    &__contact_adres {
+        display: flex;
+        text-decoration: none; 
+        align-items: center; 
+    }
+    
+    .pin {
+      vertical-align: centr;
+      align-items: center;
+    }
+    
+    &__content {
+      display: flex;
+      text-decoration: none;
+    }
+    
+    &__icon {
+        color: $color-primary;
+        padding-right: 2rem;
+    }
+    
+    &_adres {
+        padding: 4.4rem 0;
+    }
+    
+    .contact_boston{
+        padding-top: 3.2rem;
+        
+    }
+    
+    .contacy_london {
+      padding-top: 3.3rem;
+      align-items: center;
+    }
 }
 
-.contacy_london {
-  padding-top: 3.3rem;
-  align-items: center;
-}
+
+
+
+
 
 
 

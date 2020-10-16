@@ -450,54 +450,48 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     display: flex;   
     flex-direction: column; 
     width: 100%;
-}
 
-.help__title {
-    @include h3;
-    text-align: center;
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-    max-width: 34.8rem;
-    margin: auto;
-}
+    &__title {
+        @include h3;
+        text-align: center;
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+        max-width: 34.8rem;
+        margin: auto;
+    }
 
-.help__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-.help__content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width:  102.5rem;  
-    padding-bottom: 5.5rem; 
-}
+    &__content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 12rem;
+        row-gap: 5.5rem;
+        padding-bottom: 10.2rem;
+    }
 
-.help__content-wrapper2 {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10.2rem;
-    width:  98rem;
-    margin: auto;
-}
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
 
+    &__icon {
+        padding-bottom: 2.8rem;
+    }
 
-.help__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__icon_text {
+        @include h4;
+        letter-spacing: 0.12rem;
+    }
 }
-
-.icon {
-    padding-bottom: 2.8rem;
-}
-.help__icon-text {
-    @include h4;
-    letter-spacing: 0.12rem;
-}
-
 
 .donation {
     width: 100%;
@@ -671,6 +665,14 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 @media screen and (max-width: 1100px) {
     .hero__content {
         flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__wrapper {
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
 }

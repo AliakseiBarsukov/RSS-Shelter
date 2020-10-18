@@ -276,6 +276,8 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 
     &__image-wrapper {
         display: flex;
+        max-width: 30rem;
+        max-height: 41rem;
     }
 
     &__image {
@@ -295,6 +297,10 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         @include h3;
     }
 
+    &__title span {
+        display: block;
+    }
+
     &__description {
         margin-top: 2.5rem;
         p {
@@ -306,6 +312,32 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
         }        
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .about__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__image-wrapper {
+        display: block;
+        padding-bottom: 6rem;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .about__content {
+        display: block;
+        
+        padding-top: 6rem;
+    }
+    
+}
+
 
 
 .pets {
@@ -446,6 +478,19 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 
+@media screen and (max-width: 1200px){
+    .pets 
+    .pets__content 
+    .pets__cards {
+        justify-content: space-around;
+        // align-items: center;
+    }
+
+    .hiden {
+        display: none;
+    }
+} 
+
 .help {
     display: flex;   
     flex-direction: column; 
@@ -509,11 +554,12 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     &__image-wrapper {
         display: flex;
         padding-top: 1rem;
+        max-width: 50.5rem;
+        max-height: 26.1rem;
     }
 
     &__image {
         width: 100%;
-        max-height: 26.1rem;
     }
 
     &__content {
@@ -666,6 +712,17 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
     .wrapper {
         padding: 0 4rem;
     }
+
+    .donation__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .donation__image-wrapper {
+        margin-bottom: 6rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -676,9 +733,25 @@ $footer-gradient-background: url(/assets/images/noise_transparent@2x.png), radia
 }
 
 @media screen and (max-width: 1000px) {
+    
+
+    .footer__contact {
+        margin: 0 3rem;
+        padding-bottom: 6rem;
+    }
     .footer__wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+    }
+
+    .footrer__image { 
+        max-width: 30rem;
+        max-height: 31.5rem;
+
+        &__image_puppy {
+            width: 100%;
+        }
     }
 }

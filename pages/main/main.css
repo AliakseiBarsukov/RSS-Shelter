@@ -225,6 +225,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 30rem;
+  max-height: 41rem;
 }
 
 .about__image {
@@ -254,6 +256,10 @@
   letter-spacing: 0.21rem;
 }
 
+.about__title span {
+  display: block;
+}
+
 .about__description {
   margin-top: 2.5rem;
 }
@@ -269,6 +275,33 @@
 
 .about__description p:nth-child(2) {
   margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__image-wrapper {
+    display: block;
+    padding-bottom: 6rem;
+  }
+  .about__title {
+    text-align: center;
+  }
+  .about__content {
+    display: block;
+    padding-top: 6rem;
+  }
 }
 
 .pets {
@@ -428,6 +461,18 @@
   background-color: #FDDCC4;
 }
 
+@media screen and (max-width: 1200px) {
+  .pets
+.pets__content
+.pets__cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hiden {
+    display: none;
+  }
+}
+
 .help {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,11 +580,12 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 1rem;
+  max-width: 50.5rem;
+  max-height: 26.1rem;
 }
 
 .donation__image {
   width: 100%;
-  max-height: 26.1rem;
 }
 
 .donation__content {
@@ -732,6 +778,22 @@
   .wrapper {
     padding: 0 4rem;
   }
+  .donation__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .donation__image-wrapper {
+    margin-bottom: 6rem;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -747,15 +809,29 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .footer__contact {
+    margin: 0 3rem;
+    padding-bottom: 6rem;
+  }
   .footer__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footrer__image {
+    max-width: 30rem;
+    max-height: 31.5rem;
+  }
+  .footrer__image__image_puppy {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

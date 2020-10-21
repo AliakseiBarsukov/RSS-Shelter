@@ -122,97 +122,76 @@
 
 .burger__menu {
   display: none;
+  padding-top: 0.9rem;
 }
 
-.overlay {
-  height: 100%;
-  width: 0%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.burger__btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+  height: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  font-family: Arial;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 46px;
-  color: #818181;
+.btn__line {
   display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+  width: 3rem;
+  background-color: #F1CDB3;
+  height: 0.2rem;
+  -ms-flex-preferred-size: 0.16rem;
+      flex-basis: 0.16rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
   .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 25rem;
+  }
+  .list__item {
+    padding-bottom: 2rem;
+  }
+  .menu {
     display: none;
+  }
+  .openMenu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
   }
   .burger__menu {
     display: block;
-    position: relative;
-    width: 3rem;
-    height: 2.2rem;
-  }
-  .burger__menu span {
-    position: absolute;
-    background-color: #F1CDB3;
-    right: 0;
-    width: 100%;
-    height: 0.2rem;
-    top: 1rem;
-    cursor: pointer;
-  }
-  .burger__menu:before,
-  .burger__menu:after {
-    content: '';
-    background-color: #F1CDB3;
-    position: absolute;
-    width: 100%;
-    height: 0.2rem;
-    right: 0;
-  }
-  .burger__menu:before {
-    top: 0;
-  }
-  .burger__menu:after {
-    bottom: 0;
   }
 }
 
